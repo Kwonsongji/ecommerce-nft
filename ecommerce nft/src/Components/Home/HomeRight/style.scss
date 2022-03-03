@@ -1,0 +1,16 @@
+.homeRight{
+  &container{
+    max-width: 1280px;
+    margin: auto;
+  }
+  &__stats{
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  &__perso-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,16 +1,19 @@
-import React from 'react'
+import React from 'react';
+import './style.scss';
 
 const HomeLeft = () => {
   return (
-    <div className="Home_Left">
-        <h1 className="Home_Left_title"> Best <span> NFT </span> collection for your Future</h1>
-        <div className="Home_Left_btn">
-          <button class="btn btn--full"> </button>
-        </div>
-        <div className="Home_Left_btn">
-          <button class="btn btn--border">
+    <div className="hero__left">
+      <h1 className="hero__left__title"> Best <span> NFT </span> <br />
+        Collection for  your Future</h1>
+       
+          <button class="btn btn--full">Explore Now </button>
+        
+    
+        <button class="btn btn--border">
+          Create NFT
           </button>
-        </div>
+
         <ul>
           <li>
             <strong>62 500 </strong>

@@ -1,0 +1,48 @@
+$linear-gradient :  linear-gradient(90deg, rgba(228,45,21,1) 2%, rgba(245,158,14,1) 7%, rgba(181,21,198,1) 21%, rgba(8,63,244,0.9957943735092971) 89%);
+.hero{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.btn{
+  color: white;
+  height: 40px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: $linear-gradient;
+  border-radius: 48px; 
+}
+ .btn--border{
+   position: relative;
+   border: 4px solid transparent;
+   border-radius: 30px;
+   height: 2em;
+   background: black;
+   background-clip: padding-box ;
+   color: rgba(white,.8);
+   &:after{
+      content:'';
+        position: absolute;
+        inset:-2px;
+        display: block;
+        z-index: -1;
+        background: $linear-gradient;
+        border-radius: 30px;
+   }
+  }
+
+  .btn--small{
+    height: 2.2em;
+  }
+  .btn--white{
+    border-color: white;
+    border-width: 2px;
+  }
+
+
+

@@ -1,0 +1,32 @@
+@use '../../../styles/s' as v;
+$linear-gradient :  linear-gradient(90deg, rgba(228,45,21,1) 2%, rgba(245,158,14,1) 7%, rgba(181,21,198,1) 21%, rgba(8,63,244,0.9957943735092971) 89%);
+.hero__left{
+  &__title{
+    font-size: 3.4em;
+    margin-bottom: 32px ;
+    span{
+      background-image: $linear-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color:transparent;
+    }
+  }
+  li{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-right: 2px solid white;
+    align-items: center;
+    text-align: left;
+    &:last-child{
+      border:none; 
+    }
+  }
+  strong{
+    
+  }
+
+
+
+}
