@@ -1,11 +1,14 @@
 import React from 'react'; 
 import './style.scss';
+import img from '../../../assets/img.png'
 const HomeRight = () => {
   return (
-    <div>HomeRight
+    <div>
       <div className="homRight">
         <div className="homeRight__perso-wrapper">
-          <img src="" alt="" />
+          <div className="homeRight__img">
+            <img src={img} alt="img" />
+          </div>
           <div className="homeRight__stats">
           <div className="homeRight__">
             <span> Current Bid</span>

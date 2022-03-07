@@ -13,7 +13,7 @@ const Header = () => {
           <li>Artist</li>
         </ul>
         
-        <div className="header__search border-gradient border-gradient-sunset">
+        <div className="header__search">
           <input
             className="header__input "
             type="text"

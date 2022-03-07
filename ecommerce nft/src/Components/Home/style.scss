@@ -9,37 +9,46 @@ $linear-gradient :  linear-gradient(90deg, rgba(228,45,21,1) 2%, rgba(245,158,14
 
 .btn{
   color: white;
-  height: 40px;
+  height: 3.8em;
   padding: 0 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: $linear-gradient;
   border-radius: 48px; 
+
+  
 }
- .btn--border{
-   position: relative;
-   border: 4px solid transparent;
-   border-radius: 30px;
-   height: 2em;
-   background: black;
-   background-clip: padding-box ;
-   color: rgba(white,.8);
-   &:after{
-      content:'';
-        position: absolute;
-        inset:-2px;
-        display: block;
-        z-index: -1;
-        background: $linear-gradient;
-        border-radius: 30px;
-   }
+  .btn--border{
+  position: relative;
+  border: 4px solid transparent;
+  border-radius: 30px;
+  background: black;
+   background-clip: padding-box;
+  //padding: 20px;
+// bg bordure situé à l'int. du container
+  color: rgba(white,.8); 
+  
   }
+
+.btn--border:after{
+      content:'';
+      position: absolute;
+      inset: -2px; // inset est une propriété raccourcie permettant de définir les propriétés top, right, bottom et/ou left.
+      display: block;
+      z-index: -1;
+      background: $linear-gradient;
+      border-radius: 30px;
+      //margin-top:10em;
+      //padding: 10em;
+   }
+ 
 
   .btn--small{
     height: 2.2em;
   }
   .btn--white{
+    background: transparent;
     border-color: white;
     border-width: 2px;
   }

@@ -3,7 +3,8 @@ $linear-gradient :  linear-gradient(90deg, rgba(228,45,21,1) 2%, rgba(245,158,14
 .hero__left{
   &__title{
     font-size: 3.4em;
-    margin-bottom: 32px ;
+    margin-bottom: 55px ;
+    line-height: 1.1em;
     span{
       background-image: $linear-gradient;
       -webkit-background-clip: text;
@@ -11,20 +12,30 @@ $linear-gradient :  linear-gradient(90deg, rgba(228,45,21,1) 2%, rgba(245,158,14
       -moz-background-clip: text;
       -moz-text-fill-color:transparent;
     }
-  }
+   }
+
+   &__figures{
+    margin-top: 55px;
+     width: 50vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+ 
   li{
-    display: flex;
+     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 1; // chaque item ont la même largeur et longueur
     border-right: 2px solid white;
     align-items: center;
-    text-align: left;
+    text-align: left; 
     &:last-child{
       border:none; 
     }
   }
   strong{
-    
+    font-size: 1.4em;
+    margin-bottom: .3em;
   }
 
 
